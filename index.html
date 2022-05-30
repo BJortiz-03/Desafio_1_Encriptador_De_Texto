@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="es"> 
+     
+    <head>
+       <meta charset="UTF_8">
+       <meta name="viewport" content="width=device-width">
+       <title>Encriptador de Texto </title>
+       <link rel="shorcut icon" href="imagenescha/logo2.jpg">
+       <link rel="stylesheet" href="reset.css">
+       <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+                <img class="logo" src="./img/Logo.png"> 
+        </header>
+        <main id="bloque">
+            <div id="resultado1">
+                <textarea type="text" id="texto" placeholder="Ingrese texto aqui.."></textarea>
+                    <p class="letras">
+                    <img  class="vector" src="./img/Vector.png" alt="vector">Solo letras minusculas y sin acento
+                    </p>
+                <p class="contenedorBotones">
+                    <button onclick="encrip()"  id="encriptar" class="botones" type="submit">Encriptar</button>
+                    <button  onclick="desencrip()"  id="desencriptar" class="botones"
+                    type="submit">Desencriptar</button>
+                </p>
+            </div>
+            <div class="resultado2">
+                <div class="text-box disabled">
+                    <textarea id="resul"></textarea> 
+                </div>
+                <div class="mensaje">
+                    <img src="./img/Muñeco.png" alt="eloy" class="eloy">
+                    <p class="mensajeencontrado">Ningún Mensaje fue encontrado</p>
+                    <p class="respuesta">Ingresa el texto que deseas encriptar o desencriptar</p>
+                </div>
+                <div>   
+                     <button onclick="copy()" type="button" class="copiar"> Copiar </button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="redes">
+                <a 
+                href="" class="login">
+                    <img src="" alt width="20px">
+                </a>
+                <a href="" class="login">
+                    <img src="" alt width="20px">
+                </a>
+               <p> © 2022 - Billy Jou Ortiz Monge </p>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+
+    </body>
+</html>
